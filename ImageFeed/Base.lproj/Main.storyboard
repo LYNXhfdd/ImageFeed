@@ -37,8 +37,12 @@
                                                         <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cd6-sR-WFJ" userLabel="Like Button">
-                                                    <rect key="frame" x="347" y="4" width="44" height="44"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cd6-sR-WFJ" userLabel="Like Button">
+                                                    <rect key="frame" x="333" y="4" width="44" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="6Li-1C-BHD"/>
+                                                        <constraint firstAttribute="width" constant="44" id="Zyx-jD-51i"/>
+                                                    </constraints>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                     <state key="normal" image="like_button_on"/>
                                                 </button>
