@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -13,22 +13,22 @@
             <objects>
                 <viewController title="ImagesList" id="BYZ-38-t0r" customClass="ImagesListViewController" customModule="ImageFeed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="qM9-0r-qQk">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                                 <color key="backgroundColor" red="0.10196078431372549" green="0.10588235294117647" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ImagesListCell" rowHeight="209" id="s1G-86-Xu6" customClass="ImagesListCell" customModule="ImageFeed" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="209"/>
+                                        <rect key="frame" x="0.0" y="50" width="430" height="209"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="s1G-86-Xu6" id="JvH-HE-J2a">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="209"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="430" height="209"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="rs1-5V-pZi">
-                                                    <rect key="frame" x="16" y="4" width="361" height="201"/>
+                                                    <rect key="frame" x="16" y="4" width="398" height="201"/>
                                                     <color key="backgroundColor" red="0.10196078431372549" green="0.10588235294117647" blue="0.13333333333333333" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -38,7 +38,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cd6-sR-WFJ" userLabel="Like Button">
-                                                    <rect key="frame" x="333" y="4" width="44" height="44"/>
+                                                    <rect key="frame" x="370" y="4" width="44" height="44"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="44" id="6Li-1C-BHD"/>
                                                         <constraint firstAttribute="width" constant="44" id="Zyx-jD-51i"/>
@@ -47,7 +47,7 @@
                                                     <state key="normal" image="like_button_on"/>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="27 августа 2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Oh-md-f6r" userLabel="Date Label">
-                                                    <rect key="frame" x="24.000000000000007" y="181.33333333333334" width="101.66666666666669" height="15.666666666666657"/>
+                                                    <rect key="frame" x="24.000000000000007" y="181" width="101.66666666666669" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -102,9 +102,81 @@
             </objects>
             <point key="canvasLocation" x="135.1145038167939" y="3.5211267605633805"/>
         </scene>
+        <!--Profile-->
+        <scene sceneID="2lP-xq-ThO">
+            <objects>
+                <viewController id="v9w-cE-w7Y" userLabel="Profile" customClass="ProfileViewController" customModule="ImageFeed" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Gd-rP-WQP">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo" translatesAutoresizingMaskIntoConstraints="NO" id="Lhq-Le-mcd">
+                                <rect key="frame" x="16" y="91" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="VKh-e8-JCM"/>
+                                    <constraint firstAttribute="width" constant="70" id="xFm-lg-IFZ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Екатерина Новикова" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lo9-Nv-zwa">
+                                <rect key="frame" x="16" y="169" width="217" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@ekaterina_nov" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k5S-48-1Zi">
+                                <rect key="frame" x="16" y="205" width="97" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.68235294117647061" green="0.68627450980392157" blue="0.70588235294117641" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, world!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UdY-k5-vSu">
+                                <rect key="frame" x="16" y="229" width="76" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIw-R7-nda">
+                                <rect key="frame" x="370" y="114" width="44" height="36"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="ipad.and.arrow.forward"/>
+                                <connections>
+                                    <action selector="didTapLogoutButton:" destination="v9w-cE-w7Y" eventType="touchUpInside" id="fAz-3c-8I4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="V0p-kE-hqE"/>
+                        <color key="backgroundColor" red="0.1019607931" green="0.1058823466" blue="0.1294117719" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Lo9-Nv-zwa" firstAttribute="leading" secondItem="V0p-kE-hqE" secondAttribute="leading" constant="16" id="CqO-KC-DRi"/>
+                            <constraint firstItem="Lhq-Le-mcd" firstAttribute="leading" secondItem="V0p-kE-hqE" secondAttribute="leading" constant="16" id="NST-JL-Rle"/>
+                            <constraint firstItem="UdY-k5-vSu" firstAttribute="leading" secondItem="V0p-kE-hqE" secondAttribute="leading" constant="16" id="ebc-wP-ZJl"/>
+                            <constraint firstItem="V0p-kE-hqE" firstAttribute="trailing" secondItem="DIw-R7-nda" secondAttribute="trailing" constant="16" id="h6p-Fo-UVw"/>
+                            <constraint firstItem="DIw-R7-nda" firstAttribute="top" secondItem="V0p-kE-hqE" secondAttribute="top" constant="55" id="hp9-kr-vhn"/>
+                            <constraint firstItem="DIw-R7-nda" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Lhq-Le-mcd" secondAttribute="trailing" id="jBT-cO-AKD"/>
+                            <constraint firstItem="Lo9-Nv-zwa" firstAttribute="top" secondItem="Lhq-Le-mcd" secondAttribute="bottom" constant="8" id="m4c-DT-eOM"/>
+                            <constraint firstItem="Lhq-Le-mcd" firstAttribute="top" secondItem="V0p-kE-hqE" secondAttribute="top" constant="32" id="oLj-8t-DqL"/>
+                            <constraint firstItem="k5S-48-1Zi" firstAttribute="top" secondItem="Lo9-Nv-zwa" secondAttribute="bottom" constant="8" id="t1n-jR-trW"/>
+                            <constraint firstItem="UdY-k5-vSu" firstAttribute="top" secondItem="k5S-48-1Zi" secondAttribute="bottom" constant="8" id="tkb-mb-nFb"/>
+                            <constraint firstItem="k5S-48-1Zi" firstAttribute="leading" secondItem="V0p-kE-hqE" secondAttribute="leading" constant="16" id="w2w-Ss-6A1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="avatarImageView" destination="Lhq-Le-mcd" id="mXW-Dv-JSj"/>
+                        <outlet property="descriptionLabel" destination="UdY-k5-vSu" id="3nM-65-SCD"/>
+                        <outlet property="loginNameLabel" destination="k5S-48-1Zi" id="08c-CN-h0U"/>
+                        <outlet property="logoutButton" destination="DIw-R7-nda" id="DwN-l3-M9K"/>
+                        <outlet property="nameLabel" destination="Lo9-Nv-zwa" id="UTs-b6-ueg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5J8-eX-jhg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="820.61068702290072" y="3.5211267605633805"/>
+        </scene>
     </scenes>
     <resources>
         <image name="0" width="200" height="132"/>
+        <image name="Photo" width="70" height="70"/>
+        <image name="ipad.and.arrow.forward" width="20" height="22"/>
         <image name="like_button_on" width="30" height="28"/>
     </resources>
 </document>

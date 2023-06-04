@@ -14,6 +14,7 @@
 		B72C4A372A18DFA00007B4FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B72C4A362A18DFA00007B4FA /* Assets.xcassets */; };
 		B72C4A3A2A18DFA00007B4FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B72C4A382A18DFA00007B4FA /* LaunchScreen.storyboard */; };
 		B72C4A622A1FD8A60007B4FA /* ImagesListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72C4A612A1FD8A60007B4FA /* ImagesListCell.swift */; };
+		B7F873DF2A292C180073D3D0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F873DE2A292C180073D3D0 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		B72C4A392A18DFA00007B4FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B72C4A3B2A18DFA00007B4FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B72C4A612A1FD8A60007B4FA /* ImagesListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListCell.swift; sourceTree = "<group>"; };
+		B7F873DE2A292C180073D3D0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 		B72C4A212A18DF9E0007B4FA = {
 			isa = PBXGroup;
 			children = (
+				B7F873DD2A292BED0073D3D0 /* Profile */,
 				B72C4A632A1FD9010007B4FA /* ImagesList */,
 				B72C4A2C2A18DF9E0007B4FA /* ImageFeed */,
 				B72C4A2B2A18DF9E0007B4FA /* Products */,
@@ -76,6 +79,14 @@
 				B72C4A312A18DF9E0007B4FA /* ImagesListViewController.swift */,
 			);
 			path = ImagesList;
+			sourceTree = "<group>";
+		};
+		B7F873DD2A292BED0073D3D0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				B7F873DE2A292C180073D3D0 /* ProfileViewController.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7F873DF2A292C180073D3D0 /* ProfileViewController.swift in Sources */,
 				B72C4A322A18DF9E0007B4FA /* ImagesListViewController.swift in Sources */,
 				B72C4A622A1FD8A60007B4FA /* ImagesListCell.swift in Sources */,
 				B72C4A2E2A18DF9E0007B4FA /* AppDelegate.swift in Sources */,
