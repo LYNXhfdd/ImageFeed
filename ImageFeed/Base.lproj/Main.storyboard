@@ -183,65 +183,10 @@
                     <view key="view" contentMode="scaleToFill" id="7Gd-rP-WQP">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo" translatesAutoresizingMaskIntoConstraints="NO" id="Lhq-Le-mcd">
-                                <rect key="frame" x="16" y="91" width="70" height="70"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="VKh-e8-JCM"/>
-                                    <constraint firstAttribute="width" constant="70" id="xFm-lg-IFZ"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Екатерина Новикова" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lo9-Nv-zwa">
-                                <rect key="frame" x="16" y="169" width="217" height="28"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@ekaterina_nov" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k5S-48-1Zi">
-                                <rect key="frame" x="16" y="205" width="97" height="16"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" red="0.68235294117647061" green="0.68627450980392157" blue="0.70588235294117641" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, world!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UdY-k5-vSu">
-                                <rect key="frame" x="16" y="229" width="76" height="16"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIw-R7-nda">
-                                <rect key="frame" x="394" y="114" width="20" height="22"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" image="ipad.and.arrow.forward"/>
-                                <connections>
-                                    <action selector="didTapLogoutButton:" destination="v9w-cE-w7Y" eventType="touchUpInside" id="fAz-3c-8I4"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="V0p-kE-hqE"/>
                         <color key="backgroundColor" red="0.1019607931" green="0.1058823466" blue="0.1294117719" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstItem="Lo9-Nv-zwa" firstAttribute="leading" secondItem="V0p-kE-hqE" secondAttribute="leading" constant="16" id="CqO-KC-DRi"/>
-                            <constraint firstItem="Lhq-Le-mcd" firstAttribute="leading" secondItem="V0p-kE-hqE" secondAttribute="leading" constant="16" id="NST-JL-Rle"/>
-                            <constraint firstItem="UdY-k5-vSu" firstAttribute="leading" secondItem="V0p-kE-hqE" secondAttribute="leading" constant="16" id="ebc-wP-ZJl"/>
-                            <constraint firstItem="V0p-kE-hqE" firstAttribute="trailing" secondItem="DIw-R7-nda" secondAttribute="trailing" constant="16" id="h6p-Fo-UVw"/>
-                            <constraint firstItem="DIw-R7-nda" firstAttribute="top" secondItem="V0p-kE-hqE" secondAttribute="top" constant="55" id="hp9-kr-vhn"/>
-                            <constraint firstItem="DIw-R7-nda" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Lhq-Le-mcd" secondAttribute="trailing" id="jBT-cO-AKD"/>
-                            <constraint firstItem="Lo9-Nv-zwa" firstAttribute="top" secondItem="Lhq-Le-mcd" secondAttribute="bottom" constant="8" id="m4c-DT-eOM"/>
-                            <constraint firstItem="Lhq-Le-mcd" firstAttribute="top" secondItem="V0p-kE-hqE" secondAttribute="top" constant="32" id="oLj-8t-DqL"/>
-                            <constraint firstItem="k5S-48-1Zi" firstAttribute="top" secondItem="Lo9-Nv-zwa" secondAttribute="bottom" constant="8" id="t1n-jR-trW"/>
-                            <constraint firstItem="UdY-k5-vSu" firstAttribute="top" secondItem="k5S-48-1Zi" secondAttribute="bottom" constant="8" id="tkb-mb-nFb"/>
-                            <constraint firstItem="k5S-48-1Zi" firstAttribute="leading" secondItem="V0p-kE-hqE" secondAttribute="leading" constant="16" id="w2w-Ss-6A1"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="tab_profile_active" id="xl1-kH-9rK"/>
-                    <connections>
-                        <outlet property="avatarImageView" destination="Lhq-Le-mcd" id="mXW-Dv-JSj"/>
-                        <outlet property="descriptionLabel" destination="UdY-k5-vSu" id="3nM-65-SCD"/>
-                        <outlet property="loginNameLabel" destination="k5S-48-1Zi" id="08c-CN-h0U"/>
-                        <outlet property="logoutButton" destination="DIw-R7-nda" id="DwN-l3-M9K"/>
-                        <outlet property="nameLabel" destination="Lo9-Nv-zwa" id="UTs-b6-ueg"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5J8-eX-jhg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -297,8 +242,6 @@
     <resources>
         <image name="0" width="200" height="132"/>
         <image name="Backward" width="24" height="24"/>
-        <image name="Photo" width="70" height="70"/>
-        <image name="ipad.and.arrow.forward" width="20" height="22"/>
         <image name="like_button_on" width="30" height="28"/>
         <image name="share_button" width="51" height="50"/>
         <image name="tab_editorial_active" width="20" height="22"/>
