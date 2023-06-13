@@ -9,13 +9,13 @@ final class SingleImageViewController: UIViewController {
         }
     }
     
-    @IBOutlet var imageView: UIImageView!
-    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet private var imageView: UIImageView!
+    @IBOutlet private weak var scrollView: UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         scrollView.minimumZoomScale = 0.1
-        scrollView.maximumZoomScale = 20
+        scrollView.maximumZoomScale = 1.5
         imageView.image = image
         rescaleAndCenterImageInScrollView(image: image)
     }
@@ -33,8 +33,8 @@ final class SingleImageViewController: UIViewController {
         view.layoutIfNeeded()
         scrollView.layoutIfNeeded()
         scrollView.zoomScale = scale
-        let verticalPadding =  max(0, (scrollView.contentSize.height - scrollView.bounds.height) / 2)
-        let horizontalPadding =  max(0, (scrollView.contentSize.width - scrollView.bounds.width) / 2)
+        let verticalPadding = (scrollView.contentSize.height - scrollView.bounds.height) / 2
+        let horizontalPadding =  (scrollView.contentSize.width - scrollView.bounds.width) / 2
         scrollView.contentOffset = CGPoint(x: horizontalPadding, y: verticalPadding)
     }
     
@@ -48,16 +48,6 @@ final class SingleImageViewController: UIViewController {
             applicationActivities: nil
         )
         present(share, animated: true, completion: nil)
-    }
-    
-    func scrollViewDidZoom(_ scrollView: UIScrollView) {
-        let imageViewSize = imageView.frame.size
-        let scrollViewSize = scrollView.bounds.size
-        
-        let verticalPadding = imageViewSize.height < scrollViewSize.height ? (scrollViewSize.height - imageViewSize.height) / 2 : 0
-        let horizontalPadding = imageViewSize.width < scrollViewSize.width ? (scrollViewSize.width - imageViewSize.width) / 2 : 0
-        
-        scrollView.contentInset = UIEdgeInsets(top: verticalPadding, left: horizontalPadding, bottom: verticalPadding, right: horizontalPadding)
     }
     
 }

@@ -1,6 +1,6 @@
 import UIKit
 
-class ProfileViewController: UIViewController {
+final class ProfileViewController: UIViewController {
     
     private func initProfileImage (view: UIView) {
         view.backgroundColor = UIColor(named: "YP Black")
@@ -11,7 +11,7 @@ class ProfileViewController: UIViewController {
         
         profilePhotoView.translatesAutoresizingMaskIntoConstraints = false
         profilePhotoView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16).isActive = true
-        profilePhotoView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 40).isActive = true
+        profilePhotoView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 32).isActive = true
         profilePhotoView.heightAnchor.constraint(equalToConstant: 70).isActive = true
         profilePhotoView.widthAnchor.constraint(equalToConstant: 70).isActive = true
         
